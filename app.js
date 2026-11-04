@@ -9,8 +9,11 @@
     return node;
   };
   const safeLink = (value) => {
+    // Empty image/link fields must stay empty: new URL('', location.href)
+    // would otherwise resolve to the homepage and create broken images.
+    if (typeof value !== 'string' || !value.trim()) return '';
     try {
-      const url = new URL(value, location.href);
+      const url = new URL(value.trim(), location.href);
       return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
     } catch { return ''; }
   };
@@ -27,7 +30,21 @@
     const art = el('div', 'project-visual ' + (['agri','forest','trust','insure','nature','study','film'].includes(project.visual) ? project.visual : 'agri'));
     art.setAttribute('aria-hidden', 'true');
     const image = safeLink(project.image);
-    if (image) { const photo=el('img','visual-photo'); photo.src=image; photo.alt=''; photo.loading='lazy'; art.append(photo); art.classList.add('has-image'); }
+    if (image) {
+      const photo = el('img', 'visual-photo');
+      photo.alt = '';
+      photo.loading = 'lazy';
+      photo.decoding = 'async';
+      // If a custom image is missing, blocked or returns HTML, show the
+      // original themed typographic illustration rather than a broken icon.
+      photo.addEventListener('error', () => {
+        art.classList.remove('has-image');
+        photo.remove();
+      }, { once: true });
+      art.classList.add('has-image');
+      art.append(photo);
+      photo.src = image;
+    }
     const top = el('div', 'visual-top');
     top.append(el('span', '', 'FA / SELECTED WORK'), el('span', 'visual-corner', '↗'));
     const words = artWords[project.visual] || [project.title, ''];
