@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" /><meta name="theme-color" content="#152b20" />
+<title>Portfolio Studio | Faheem Ahmed</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="admin.css" />
+<script defer src="fallback.js"></script><script defer src="admin.js"></script>
+</head>
+<body>
+<header class="admin-header"><a class="admin-brand" href="index.html"><span class="admin-logo">f<span>.</span></span><span>Portfolio <strong>Studio</strong></span></a><div class="admin-header-right"><span class="admin-status" id="draftStatus"><span class="status-light"></span>Ready to edit</span><a href="index.html" target="_blank" rel="noopener noreferrer" class="site-link">View website ↗</a></div></header>
+<div class="admin-layout">
+<aside class="admin-sidebar"><div class="sidebar-title">YOUR WORKSPACE</div><nav class="admin-tabs" aria-label="Admin sections"><button class="tab active" data-tab="profile">✳ <span>Profile & intro</span></button><button class="tab" data-tab="projects">▦ <span>Projects</span></button><button class="tab" data-tab="experience">◷ <span>Experience</span></button><button class="tab" data-tab="skills">◈ <span>Skills & tools</span></button><button class="tab" data-tab="links">↗ <span>Social links</span></button><button class="tab" data-tab="publishing">⚙ <span>Publishing</span></button></nav><div class="sidebar-help"><strong>Always in control.</strong><p>Make edits locally, preview them, then export your content or publish to GitHub.</p><span>GitHub token is never saved.</span></div></aside>
+<main class="admin-main"><div class="editor-intro"><div><div class="upper-label">FAHEEM / CONTENT MANAGER</div><h1 id="tabTitle">Profile & intro</h1><p id="tabDescription">Edit the words people see first.</p></div><div class="editor-actions"><button class="ghost-btn" id="exportButton">↓ Export JSON</button><button class="primary-btn" id="publishButton">Publish changes ↗</button></div></div><div id="notification" role="status" aria-live="polite" class="notification" hidden></div><div id="editorPane" class="editor-pane"></div></main>
+<aside class="preview-sidebar"><div class="preview-head"><strong>LIVE PREVIEW</strong><span>Desktop / Mobile</span></div><div class="preview-controls"><button id="desktopPreview" class="selected" aria-pressed="true">▣ Desktop</button><button id="mobilePreview" aria-pressed="false">▯ Mobile</button></div><div class="preview-frame-holder" id="previewFrameHolder"><iframe title="Live portfolio preview" id="previewFrame" src="index.html"></iframe></div><p class="preview-tip">The preview reflects edits automatically. Nothing is published until you choose to save.</p></aside>
+</div>
+</body>
+</html>
