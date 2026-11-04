@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f7f2" />
+  <meta name="description" content="Faheem Ahmed: project delivery, digital products, UI/UX and creative work. Selected projects, skills and experience." />
+  <meta property="og:title" content="Faheem Ahmed | Portfolio" />
+  <meta property="og:description" content="Project delivery, digital products and thoughtful design." />
+  <meta property="og:type" content="website" />
+  <title>Faheem Ahmed | Project Delivery, Digital Products & Design</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="fallback.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-row">
+      <a class="wordmark" href="#top" aria-label="Faheem Ahmed, back to top"><span class="logo-symbol">f<span class="logo-dot">.</span></span><span id="headerName">faheem<span class="muted-mark">/portfolio</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a><a href="#about">About</a>
+      </nav>
+      <a class="header-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" hidden><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell section" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-mark"></span><span id="heroEyebrow">PROJECT DELIVERY × DIGITAL PRODUCTS × DESIGN</span></div>
+        <h1 id="heroTitle">Turning moving parts into <em>momentum.</em></h1>
+        <p class="hero-desc" id="heroIntro">I bring people, products and plans together, from complex ICT projects and procurement to digital experiences that make sense for the people using them.</p>
+        <div class="hero-actions"><a href="#work" class="button button-dark">Explore my work <span aria-hidden="true">↗</span></a><a href="#contact" class="button button-outline">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-footnote"><span class="status-pip"></span><span id="availability">Open to meaningful opportunities</span><span class="footnote-separator">/</span><span id="location">Based in Dhaka, Bangladesh</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract visual representing a process from plan to delivery" role="img">
+        <div class="art-topline"><span>WORKFLOW / 001</span><span>THINK → MAKE → MOVE</span></div>
+        <div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><div class="orbit orbit-inner"></div>
+        <div class="orbit-center"><span class="orbit-symbol">✳</span><span>make it<br />happen.</span></div>
+        <div class="orbit-tag orbit-tag-one">01 / ALIGN</div><div class="orbit-tag orbit-tag-two">02 / DESIGN</div><div class="orbit-tag orbit-tag-three">03 / DELIVER</div>
+        <div class="art-bottomline"><span>PEOPLE</span><span>PROCESS</span><span>PURPOSE</span></div>
+      </div>
+    </section>
+
+    <section class="ticker-wrap" aria-label="Areas of work"><div class="shell ticker"><span>PROJECT COORDINATION</span><span class="ticker-star">✳</span><span>DIGITAL PRODUCTS</span><span class="ticker-star">✳</span><span>UI / UX DESIGN</span><span class="ticker-star">✳</span><span>CREATIVE COMMUNICATION</span></div></section>
+
+    <section class="section shell work-section" id="work" aria-labelledby="workTitle">
+      <div class="section-head reveal"><div><p class="kicker">01 / SELECTED WORK</p><h2 id="workTitle">A little of <em>what I've built.</em></h2></div><p class="head-aside">Across products, platforms and purposeful ideas. A mix of collaboration, coordination and hands-on design.</p></div>
+      <div class="filter-row" id="projectFilters" aria-label="Filter projects"><button class="filter-chip active" data-filter="All" aria-pressed="true">All projects</button><button class="filter-chip" data-filter="Product" aria-pressed="false">Product</button><button class="filter-chip" data-filter="Design" aria-pressed="false">Design</button><button class="filter-chip" data-filter="Creative" aria-pressed="false">Creative</button></div>
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="stats-section"><div class="shell stats-layout"><div><p class="kicker light-kicker">BEHIND THE WORK</p><h2>Different disciplines.<br /><em>One connected approach.</em></h2></div><div class="stats-grid" id="statsGrid"></div></div></section>
+
+    <section class="section shell expertise-section" id="expertise" aria-labelledby="expertiseTitle"><div class="section-head reveal"><div><p class="kicker">02 / EXPERTISE</p><h2 id="expertiseTitle">The skills I <em>bring to the table.</em></h2></div><p class="head-aside">Practical project delivery with a design-minded perspective.</p></div><div class="skills-grid" id="skillsGrid"></div><div class="toolbox reveal"><div class="toolbox-heading"><span>THE TOOLBOX</span><span>Software I work with <span aria-hidden="true">↘</span></span></div><div class="tool-tags" id="toolTags"></div></div></section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journeyTitle"><div class="shell"><div class="section-head reveal"><div><p class="kicker">03 / THE JOURNEY</p><h2 id="journeyTitle">A path shaped by <em>doing.</em></h2></div><p class="head-aside">From creative beginnings to digital product teams and ICT project coordination.</p></div><div class="timeline" id="timeline"></div></div></section>
+
+    <section class="section shell about-section" id="about" aria-labelledby="aboutTitle"><div class="about-visual reveal" aria-hidden="true"><div class="about-art-title">GOOD WORK<br />IS A <span>TEAM</span><br />SPORT<span class="lime-text">✳</span></div><div class="about-art-caption">Curiosity / Clarity / Collaboration</div></div><div class="about-copy reveal"><p class="kicker">04 / ABOUT ME</p><h2 id="aboutTitle">I work where <em>coordination meets creativity.</em></h2><p id="aboutText">My experience spans ICT project delivery, public-sector tender support, product coordination and digital design.</p><div class="education-note"><span class="edu-icon">↗</span><div><small>EDUCATION</small><strong id="educationText">B.Sc. in Computer Science & Engineering · BRAC University</strong></div></div><a class="text-link" href="#contact">Have a project in mind? Let's talk <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle"><div class="shell contact-inner"><div><p class="kicker light-kicker">05 / SAY HELLO</p><h2 id="contactTitle">Let's make something <em>work.</em></h2><p>Have a role, an idea or a project to discuss? I'd be glad to hear about it.</p><a class="contact-email" id="emailLink" href="mailto:Faheemahmed.office@gmail.com">Faheemahmed.office@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-orbit" aria-hidden="true"><span>↗</span></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-main"><div><a href="#top" class="footer-brand">faheem<span>.</span></a><p id="footerNote">Built with intention. Designed for what comes next.</p></div><div><div class="footer-socials" id="footerSocials"></div><div class="footer-bottom"><span>© <span id="year"></span> <span id="footerName">Faheem Ahmed</span></span><a href="admin.html" rel="nofollow">Owner / Admin</a><a href="#top">Back to top ↑</a></div></div></div></footer>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button><p class="kicker">SELECTED PROJECT</p><h2 id="dialogTitle"></h2><p class="dialog-subtitle" id="dialogSubtitle"></p><p id="dialogDescription"></p><p class="dialog-role" id="dialogRole"></p><div id="dialogTags" class="card-tags"></div><a class="button button-dark dialog-link" id="dialogLink" href="#" target="_blank" rel="noopener noreferrer">Visit project <span>↗</span></a></dialog>
+</body>
+</html>
